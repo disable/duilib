@@ -1,0 +1,22 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+	<Window size="570,400" mininfo="570,400" maxinfo="570,400" caption="0,0,0,40" sizebox="4,4,4,4" roundcorner="4,4,4,4">
+
+	<Default name="VScrollBar" value="button1normalimage=&quot;file='scrollbar.png' source='0,0,16,16'&quot; button1hotimage=&quot;file='scrollbar.png' source='16,0,32,16,16'&quot; button1pushedimage=&quot;file='scrollbar.png' source='32,0,48,16'&quot; button2normalimage=&quot;file='scrollbar.png' source='0,32,16,48'&quot; button2hotimage=&quot;file='scrollbar.png' source='16,32,32,48'&quot; button2pushedimage=&quot;file='scrollbar.png' source='32,32,48,48'&quot; thumbnormalimage=&quot;file='scrollbar.png' source='0,48,16,64' corner='0,2,0,2'&quot; thumbhotimage=&quot;file='scrollbar.png' source='16,48,32,64' corner='0,2,0,2'&quot; thumbpushedimage=&quot;file='scrollbar.png' source='32,48,48,64' corner='0,2,0,2'&quot; bknormalimage=&quot;file='scrollbar.png' source='0,16,16,32'&quot;" />
+
+	<Font name="宋体" size="12" bold="false" default="true" />
+
+		<VerticalLayout name="VerticalLayoutUI1" float="false">
+			<VerticalLayout name="VerticalLayoutUI2" float="false" height="35" bkimage="file='defaultbkg.png' source='0,0,570,35'">
+				<Button name="min" float="true" pos="498,5,0,0" width="28" height="19" normalimage="file='btn_mini_normal.png'" hotimage="file='btn_mini_highlight.png'" pushedimage="file='btn_mini_down.png'" tooltip="最小化"/>
+				<Button name="closebtn" float="true" pos="526,5,0,0" width="39" height="19" normalimage="file='btn_close_normal.png'" hotimage="file='btn_close_highlight.png'" pushedimage="btn_close_down.png" tooltip="关闭"/>
+			</VerticalLayout>
+			<VerticalLayout name="VerticalLayoutUI3" float="false" height="335" bkimage="file='defaultbkg.png' source='0,35,570,370'">
+				<List name="down_list_tab" text="" vscrollbar="true" hscrollbar="true" tooltip="" float="false" bordersize="0" bkcolor="#FFE0F0FE" bordercolor="#FF1B4876" itemselectedbkcolor="#12312312" itemhotbkcolor="#32132121" header="hidden" inset="3,3,3,3" bkimage="file='defaultbkg.png' source='0,35,570,370'">
+
+				</List>
+			</VerticalLayout>
+			<VerticalLayout name="VerticalLayoutUI4" float="false" height="30" bkimage="file='defaultbkg.png' source='0,375,580,400'">
+				<Button name="add" float="true" pos="5,7,0,0" width="16" height="16" tooltip="添加下载任务.." normalimage="file='add.png'"/>
+			</VerticalLayout>
+		</VerticalLayout>
+	</Window>

@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+	<Window size="450,250" mininfo="450,250" caption="0,0,0,50" sizebox="4,4,4,4" roundcorner="4,4,4,4">
+
+	<Font name="宋体" size="12" bold="false" default="true" />
+	<Font name="微软雅黑" size="11" bold="false" default="true" />
+	<Font name="宋体" size="15" bold="true" default="true" />
+	<Font name="微软雅黑" size="11" bold="true" default="true" />
+
+		<VerticalLayout name="VerticalLayoutUI1" float="false">
+			<VerticalLayout name="VerticalLayoutUI2" float="false" height="70" bkimage="file='defaultbkg.png' source='0,0,450,70'">
+				<Text name="duilib" float="true" pos="5,5,0,0" bkimage="file='duilib.png'" width="15" height="15"/>
+				<Text name="tile" float="true" pos="22,6,0,0" width="120" height="12" text="duilib下载器 1.1" textcolor="#ffffffff" font="0"/>
+				<Button name="min" float="true" pos="383,5,0,0" width="28" height="19" normalimage="file='btn_mini_normal.png'" hotimage="file='btn_mini_highlight.png'" pushedimage="file='btn_mini_down.png'" tooltip="最小化"/>
+				<Button name="closebtn" float="true" pos="410,5,0,0" width="39" height="19" normalimage="file='btn_close_normal.png'" hotimage="file='btn_close_highlight.png'" pushedimage="btn_close_down.png" tooltip="关闭"/>
+			</VerticalLayout>
+			<VerticalLayout name="VerticalLayoutUI3" float="false" height="100" bkimage="file='defaultbkg.png' source='0,70,450,170'">
+				<Text name="url" float="true" pos="49,10,0,0" width="50" height="20" text="从:" textcolor="#ffffffff" font="0"/>
+				<RichEdit name="url" float="true" pos="70,5,0,0" inset="4,4,4,4" bkimage="file='search0.png'" width="350" height="20" multiline="false" textcolor="#00166897" font="0"/>
+				<Text name="path" float="true" pos="25,45,0,0" width="50" height="20" text="下载到:" textcolor="#ffffffff" font="0"/>
+				<RichEdit name="outfile" float="true" pos="70,40,0,0" inset="4,4,4,4" bkimage="file='search0.png'" width="280" height="20" multiline="false" textcolor="#00166897" font="0"/>
+				<Button name="openfile" borderround="2,2" float="true" pos="360,38,0,0" text="打开文件" textcolor="#ffffffff" font="1" width="58" height="24" normalimage="file='button.png' source='2,3,50,22'" hotimage="file='button_h.png' source='2,3,50,22'" pushedimage="file='button_p.png' source='2,3,50,22'" tooltip="打开文件"/>
+				<Text name="name" float="true" pos="37,80,0,0" width="50" height="20" text="名称:" textcolor="#ffffffff" font="0"/>
+				<RichEdit name="filename" float="true" pos="70,75,0,0" inset="4,4,4,4" bkimage="file='search0.png'" width="280" height="20" multiline="false" textcolor="#00166897" font="0"/>
+			</VerticalLayout>
+			<VerticalLayout name="VerticalLayoutUI4" float="false" height="50" bkimage="file='defaultbkg.png' source='0,170,450,220'">
+				<Text name="type" float="true" pos="38,10,0,0" width="50" height="20" text="类型:" textcolor="#ffffffff" font="0"/>
+				<Text name="filetype" float="true" pos="70,10,0,0" width="120" height="20" text="应用程序文件" textcolor="#dddddddd" font="0"/>
+				<Text name="dir" float="true" pos="260,10,0,0" width="120" height="20" text="当前盘剩余空间:" textcolor="#ffffffff" font="0"/>
+				<Text name="dirsize" float="true" pos="360,10,0,0" width="120" height="20" text="25GB" textcolor="#dddddddd" font="0"/>
+				<Text name="fsize" float="true" pos="38,35,0,0" width="120" height="20" text="大小:" textcolor="#ffffffff" font="0"/>
+				<Text name="filesize" float="true" pos="70,35,0,0" width="120" height="20" text="35.06MB" textcolor="#dddddddd" font="0"/>
+			</VerticalLayout>
+			<VerticalLayout name="VerticalLayoutUI5" float="false" height="30" bkimage="file='defaultbkg.png' source='0,220,450,250'">
+				<Text name="xunleiico" float="true" pos="25,8,0,0" bkimage="file='xunlei.bmp'" width="16" height="16"/>
+				<Button name="openxunlei" borderround="2,2" float="true" pos="42,8,0,0" showhtml="true" text="<u>使用迅雷下载</u>" textcolor="#44444444" font="3" width="70" height="16" tooltip="打开迅雷"/>
+				<Button name="downloadopen" borderround="2,2" float="true" pos="150,3,0,0" text="直接打开" textcolor="#ffffffff" font="1" width="80" height="20" normalimage="file='button.png' source='2,3,70,16'" hotimage="file='button_h.png' source='2,3,70,20'" pushedimage="file='button_p.png' source='2,3,70,20'" tooltip="下载后直接打开文件.."/>
+				<Button name="dwonload" borderround="2,2" float="true" pos="250,3,0,0" text="下载" textcolor="#ffffffff" font="1" width="80" height="20" normalimage="file='button.png' source='2,3,70,16'" hotimage="file='button_h.png' source='2,3,70,20'" pushedimage="file='button_p.png' source='2,3,70,20'" tooltip="下载文件到指定目录.."/>
+				<Button name="out" borderround="2,2" float="true" pos="350,3,0,0" text="取消下载" textcolor="#ffffffff" font="1" width="80" height="20" normalimage="file='button.png' source='2,3,70,20'" hotimage="file='button_h.png' source='2,3,70,20'" pushedimage="file='button_p.png' source='2,3,70,20'" tooltip="取消下载.."/>
+			</VerticalLayout>
+		</VerticalLayout>
+	</Window>
