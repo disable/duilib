@@ -1677,7 +1677,14 @@ void CLayoutManager::SaveControlProperty(CControlUI* pControl, TiXmlElement* pNo
 	if (pControl->IsContextMenuUsed())
 	{
 		pNode->SetAttribute("menu","true");
-	}
+    }
+
+    SIZE size = pControl->GetBorderRound();	
+    if( 0 != size.cx || 0 != size.cy )
+    {				
+        _stprintf_s(szBuf, _T("%d,%d"), size.cx, size.cy);
+        pNode->SetAttribute("borderround", StringConvertor::WideToUtf8(szBuf));
+    }
 }
 
 void CLayoutManager::SaveLabelProperty(CControlUI* pControl, TiXmlElement* pNode)

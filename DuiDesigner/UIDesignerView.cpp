@@ -946,7 +946,7 @@ void CUIDesignerView::PasteUI(LPCTSTR xml)
 	if(pRoot)
 	{
 		CControlUI* pParent = m_MultiTracker.GetFocused();
-		if(pParent->GetInterface(_T("Container")) == NULL)
+		if(NULL != pParent && pParent->GetInterface(_T("Container")) == NULL)
 			pParent = pParent->GetParent();
 		if(pParent == NULL)
 			pParent = m_LayoutManager.GetForm();

@@ -118,7 +118,7 @@ BOOL CUIDesignerApp::InitInstance()
 	RegisterShellFileTypes(TRUE);
 
 	// 主窗口已初始化，因此显示它并对其进行更新
-	pMainFrame->ShowWindow(SW_SHOWMAXIMIZED);
+	pMainFrame->ShowWindow(SW_SHOWNORMAL);
 	pMainFrame->UpdateWindow();
 
 	return TRUE;
